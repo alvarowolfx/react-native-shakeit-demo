@@ -7,7 +7,7 @@ import SuperButton from './SuperButton';
 export default class AwesomeButton extends SuperButton {
     static get defaultProps(){
         return {
-            color: 'blue'
+            color: 'green'
         }
     }
 }
