@@ -16,6 +16,7 @@ import React, {
 } from 'react-native';
 
 import MapView from 'react-native-maps';
+import SuperButton from './components/SuperButton';
 
 export default class ShakeIt extends Component {
     constructor(props) {
@@ -60,9 +61,7 @@ export default class ShakeIt extends Component {
                     <Text style={styles.welcome}>
                         Olá Dev MT
                     </Text>
-                    <TouchableHighlight style={styles.button} onPress={this._onPress}>
-                        <Text style={styles.buttonText}>Center on me</Text>
-                    </TouchableHighlight>
+                    <SuperButton text={"Center on me"} onPress={this._onPress}/>
                 </View>
                 <MapView style={styles.mapContainer} region={this.state.region}
                          showsUserLocation={true}/>
